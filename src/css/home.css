@@ -1,0 +1,145 @@
+.lista-filme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10rem auto;
+  max-width: 50rem;
+  gap: 2.25rem;
+}
+
+.imgFilme {
+  width: 17rem;
+  height: 22rem;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.h1-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  position: relative;
+  background: linear-gradient(70deg, #8323FF 0.99%, #FF2DAF 102.1%);
+  text-shadow: -25px -25px 8px rgba(0, 0, 0, 0.65);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.lista-filme strong {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 9rem;
+  height: 2.5rem;
+  max-width: 9rem;
+  font-size: 1.25rem;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-style: normal;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.btn-filme {
+  width: 17rem;
+  padding: 1rem 1rem;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2b37;
+  border-radius: 0.25rem;
+}
+
+.bg-icon2 {
+  width: 1.75rem;
+  height: 1.75rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bg-icon2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1E1F28;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.FaPlayE {
+  width: 0.4922rem;
+  height: 0.5469rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.LinkCenter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.DivVote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9375rem;
+}
+
+.voteAverage {
+  font-size: 1.128rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  filter: drop-shadow(0px 0px 14.408px rgba(254, 234, 53, 0.25));
+  color: gold;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.releaseDate {
+  font-size: 0.75rem;
+  color: #8b8d9b;
+  font-weight: 400;
+  line-height: 1.25rem;
+  font-style: normal;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  text-align: right;
+  gap: 0.435rem;
+  padding: 5px 5px;
+}
+
+.FaCalendarE {
+  color: #8b8d9b;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.loadingicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.9375rem;
+}/*# sourceMappingURL=home.css.map */

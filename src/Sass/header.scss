@@ -1,0 +1,50 @@
+@import '_variablesColors';
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80rem;
+    padding: 3.375rem 6rem;
+}
+.logo{
+    cursor: pointer ;
+}
+.favoritos{
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap: 0.5rem;
+
+    border-radius: 0.25rem;
+    background: linear-gradient(91deg, #8323FF 0.99%, #FF2DAF 102.1%);
+}
+
+.bg-icon {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    
+}
+.bg-icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white; 
+    border-radius: 50%; 
+    opacity: 0.2;
+    z-index: 1;
+}
+.faBoltE{
+    font-size: 1.125rem;
+    z-index: 2;
+    position: relative;
+    color: $white;
+}
