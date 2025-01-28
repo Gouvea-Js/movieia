@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80rem;
+  width: 99rem;
   padding: 3.375rem 6rem;
 }
 
@@ -20,12 +20,12 @@ header {
 }
 
 .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2rem;
   height: 2rem;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 

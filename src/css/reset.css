@@ -4,10 +4,10 @@ a {
 }
 
 html, body {
-  overflow: hidden; /* Remove o scroll */
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Remove o scroll */
 }
 
 html {
@@ -21,11 +21,11 @@ html {
 }
 
 body {
-  background-color: #1E1F28;
-  color: #fff;
-  font-family: "Outfit", Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1E1F28;
+  color: #fff;
+  font-family: "Outfit", Arial, sans-serif;
   flex-direction: column;
 }/*# sourceMappingURL=reset.css.map */

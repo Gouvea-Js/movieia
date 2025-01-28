@@ -1,14 +1,13 @@
 @import '_variablesColors';
+@import 'mixins';
 
 a{
     color: $white;
     text-decoration: none;
 }
 html,body{
+    @include flex-center;
     overflow: hidden; /* Remove o scroll */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 html{
     font-size: 16px;
@@ -20,11 +19,9 @@ html{
     box-sizing: border-box;
 }
 body{
+    @include flex-center;
     background-color: $cinza-dark;
     color: $white;
     font-family: 'Outfit',Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }

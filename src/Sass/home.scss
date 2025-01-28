@@ -1,26 +1,58 @@
 @import '_variablesColors';
+@import 'mixins';
 .lista-filme{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: row;
-    margin: 10rem auto;
-    max-width: 50rem;
+    margin: 5rem auto;
+    max-width: 99rem;
     gap: 2.25rem;
+    overflow: visible;
+    .slick-slide{
+        padding: 1.25rem;
+    }
+    .slick-list{
+        margin: 0 4rem;
+    }
+    .slick-arrow{
+        &::before{
+            color: $cinza-middle;
+            font-size: 2rem;
+        }
+    }
+    .slick-next{
+        right: 2rem;
+        z-index: 1;
+    }
+    .slick-prev{
+        left: 2rem;
+        opacity: 2;
+        z-index: 1;
+        &:hover{
+            color: $cinza-middle;
+            opacity: 30;
+        }
+
+    }
+    .slick-dots li button:before{
+        color: #8323FF !important;
+    }
+    .slick-dots li.sclick-active button:before{
+        color: #FF2DAF !important;
+    }
 }
 .imgFilme{
-    width: 17rem;
-    height: 22rem;
+    width: 16rem;
+    height: 21rem;
     display: flex;
     border-radius: 0.5rem;
 
 }
 .h1-title{
+    @include flex-center;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
-    display: flex;
-    position: relative;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
     background: linear-gradient(70deg, #8323FF 0.99%, #FF2DAF 102.1%);
     text-shadow: -25px -25px 8px rgba(0,0,0,0.65);
 
@@ -28,8 +60,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     top: 5rem;
-    align-items: center;
-    justify-content: center;
     text-transform: uppercase;
 }
 
@@ -51,24 +81,21 @@
 
 }
 .btn-filme{
-    width: 17rem;
+    @include flex-center;
+
+    width: 16rem;
     padding: 1rem 1rem;
     border: none;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     background-color: $cinza-a;
     border-radius: 0.25rem;
 
 }
 .bg-icon2 {
+    @include flex-center;
     width: 1.75rem;
     height: 1.75rem;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 
     
@@ -85,11 +112,9 @@
     z-index: 1;
 }
 .FaPlayE{
+    @include flex-center;
     width: 0.4922rem;
     height: 0.5469rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
     position: relative;
     z-index: 2;
     cursor: pointer;
@@ -134,8 +159,6 @@
     gap: 0.625rem;
 }
 .loadingicon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     margin-top: 0.9375rem;
 }

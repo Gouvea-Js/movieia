@@ -1,0 +1,28 @@
+.containerErro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+.containerErro h1 {
+  font-size: 2.8125rem;
+  font-weight: bold;
+  color: #8b8d9b;
+  padding-bottom: 2.1875rem;
+}
+
+.containerErro p {
+  font-size: 1.125rem;
+  color: #373745;
+  padding-bottom: 1.5rem;
+}
+
+.containerErro h2 {
+  font-size: 4.6875rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2.8125rem;
+}/*# sourceMappingURL=erro.css.map */
